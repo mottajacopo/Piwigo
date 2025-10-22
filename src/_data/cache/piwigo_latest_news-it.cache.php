@@ -1,0 +1,1 @@
+a:5:{s:2:"id";s:5:"34487";s:7:"subject";s:51:"Piwigo 15.7.0 : stronger security on password reset";s:9:"posted_on";s:10:"1760979410";s:6:"posted";s:23:"Lunedì 20 Ottobre 2025";s:3:"url";s:47:"https://piwigo.org/forum/viewtopic.php?id=34487";}

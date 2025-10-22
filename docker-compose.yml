@@ -1,0 +1,41 @@
+version: "3.8"
+
+services:
+  piwigo:
+    image: lscr.io/linuxserver/piwigo:15.7.0
+    container_name: piwigo
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "9020:80"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Rome
+      - PIWIGO_DB_HOST=db
+      - PIWIGO_DB_NAME=piwigo
+      - PIWIGO_DB_USER=piwigo
+      - PIWIGO_DB_PASSWORD=piwigo
+    volumes:
+      - ./src:/config/www              # ✅ codice PHP/TPL modificabile da VSCode
+      - ./src/_data:/config/www/_data  # ✅ cache, config, uploads
+      - ./galleries:/config/www/galleries  # ✅ gallerie persistenti
+    restart: unless-stopped
+
+  db:
+    image: mariadb:10.6
+    container_name: piwigo_db
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=piwigo
+      - MYSQL_USER=piwigo
+      - MYSQL_PASSWORD=piwigo
+    volumes:
+      - ./db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped

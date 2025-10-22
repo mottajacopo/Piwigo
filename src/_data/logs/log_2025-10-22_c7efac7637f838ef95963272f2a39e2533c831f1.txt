@@ -1,0 +1,14 @@
+[2025-10-22 21:42:33][exec=klP4hSPccJ]	[INFO]	[getuserdata][exec_code=02f8][user_id=1] needs user_cache to be rebuilt
+[2025-10-22 21:42:33][exec=klP4hSPccJ]	[INFO]	[generate_user_cache-u1][exec=84639024] starts now
+[2025-10-22 21:42:33][exec=klP4hSPccJ]	[INFO]	[generate_user_cache-u1][exec=84639024] wins the race and gets the token!
+[2025-10-22 21:42:33][exec=klP4hSPccJ]	[INFO]	[getuserdata][exec_code=02f8][user_id=1] user_cache generated, executed in 0.016 s
+[2025-10-22 21:42:53][exec=OmPKg212pB]	[INFO]	[send_piwigo_infos] current conf.send_piwigo_infos_last_notice=notFound => lets do it
+[2025-10-22 21:42:53][exec=OmPKg212pB]	[INFO]	[send_piwigo_infos][exec=5c51c4dd] starts now
+[2025-10-22 21:42:53][exec=OmPKg212pB]	[INFO]	[send_piwigo_infos][exec=5c51c4dd] wins the race and gets the token!
+[2025-10-22 21:42:54][exec=OmPKg212pB]	[INFO]	[send_piwigo_infos][exec=5c51c4dd] fetchRemote success, new send_piwigo_infos_last_notice=2025-10-22T21:42:54+02:00
+[2025-10-22 21:42:54][exec=OmPKg212pB]	[INFO]	[send_piwigo_infos][exec=5c51c4dd] executed in 1.193 s
+[2025-10-22 21:43:11][exec=z98n1lPrWb]	[DEBUG]	[admin/intro::235] recent activity calculated in 0.001 s
+[2025-10-22 21:43:24][exec=rCm111ljhw]	[DEBUG]	extract_plugin_files, $main_filepath = community/main.inc.php
+[2025-10-22 21:43:24][exec=rCm111ljhw]	[DEBUG]	extract_plugin_files, $extract_path = ./plugins/community
+[2025-10-22 21:43:24][exec=rCm111ljhw]	[DEBUG]	extract_plugin_files, $old_files = {language/tr_TR/description .txt},{include/constants.php},{maintain.inc.php},{admin.tpl},{language/es_ES/index.php},{language/hu_HU/index.php},{language/de_DE/index.php},{language/nl_NL/index.php},{language/no_NO/},{language/no_NO/plugin.lang.php},{language/no_NO/description.txt},{admin_pendings.tpl},{add_photos.tpl},{admin_permissions.tpl},{include/install.inc.php},{admin_config.tpl},{uploadify/},{uploadify/uploadify.swf},{uploadify/jquery.uploadify.v3.0.0.min.js},{uploadify/uploadify.css},{uploadify/cancel.png},{uploadify/uploadify.php},{uploadify/uploadifyLang_en.js},{edit_photos.tpl},{navigation_bar.tpl},{admin_album.tpl},{obsolete.list}
+[2025-10-22 21:43:24][exec=rCm111ljhw]	[DEBUG]	extract_plugin_files, to delete = ./plugins/community/obsolete.list
